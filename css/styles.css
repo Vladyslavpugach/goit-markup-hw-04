@@ -159,6 +159,27 @@ body {
   color: var(--accent-color);
 }
 
+.phone-img {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.envelope-img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contact-link:hover .envelope-img,
+.contact-link:focus .envelope-img,
+.contact-link:hover .phone-img,
+.contact-link:focus .phone-img {
+  fill: var(--accent-color);
+}
+
 /* ===HERO=== */
 
 .hero {
@@ -166,6 +187,7 @@ body {
   background-color: var(--background-color-title);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -223,6 +245,21 @@ body {
 
 .feature-list-item {
   width: calc((100% - 90px) / 4);
+}
+
+.feature-img-bcg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background);
+}
+
+.feature-img {
+  width: 70px;
+  height: 70px;
 }
 
 .feature-text {
